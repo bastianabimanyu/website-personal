@@ -1,0 +1,3901 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/* start navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparan agar background terlihat */
+    backdrop-filter: blur(10px); /* Blur hanya background */
+    transition: 0.90s;
+    z-index: 100;
+}
+
+nav>a{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
+
+nav>ul{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+nav>ul>a>li{
+    display: inline-block;
+    margin-right: 1.7rem;
+    color: white;
+}
+
+nav>ul>a>li:hover{
+    text-decoration-line: underline;
+    text-decoration-color: greenyellow;
+}
+
+.scrolled{
+    background-color: white;
+    z-index: 100;
+    transition: 0.85s;
+}
+
+.logon{
+    color: black;
+    z-index: 100;
+}
+
+.navbartext{
+    color: black;
+    z-index: 100;
+}
+
+.navbartext2{
+    color: black;
+    z-index: 100;
+}
+
+.navbartext3{
+    color: black;
+    z-index: 100;
+}
+
+.navbartext4{
+    color: black;
+    z-index: 100;
+}
+
+.navbartext5{
+    color: black;
+    z-index: 100;
+}
+
+.navbartext6{
+    color: black;
+    z-index: 100;
+}
+
+.navbartext7{
+    color: black;
+    z-index: 100;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar{
+    height: 4px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (min-width:300px) and (max-width:710px) {
+    .hamburger{
+        display: flex;
+    }
+
+    .navbar2{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        right: 0;
+        background-color: #333;
+        color: white    ;
+        padding: 20px 0;
+        line-height: 40px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .navbar2>a>li{
+        margin-left: 15px;
+    }
+
+    .navbar2>a>li:hover{
+        color: black;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .navbar2.active{
+        display: flex;
+    }
+
+    .navbar2>a>li.active{
+        display: flex;
+    }
+
+    .hamburger1{
+        background-color: black;
+        z-index: 100;
+    }
+
+    .hamburger2{
+        background-color: black;
+        z-index: 100;
+    }
+
+    .hamburger3{
+        background-color: black;
+        z-index: 100;
+    }
+}
+
+@media (min-width:800px) and (max-width:949px) {
+    nav{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2); /* Transparan agar background terlihat */
+        backdrop-filter: blur(10px); /* Blur hanya background */
+        transition: 0.90s;
+        z-index: 100;
+    }
+    
+    nav>a{
+        margin-left: 2rem;
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-weight: 500;
+        display: none;
+    }
+    
+    nav>ul{
+        display: flex;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+    
+    nav>ul>a>li{
+        display: inline-block;
+        color: white;
+    }
+}
+
+@media (min-width:711px) and (max-width:799px) {
+    nav{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.2); /* Transparan agar background terlihat */
+        backdrop-filter: blur(10px); /* Blur hanya background */
+        transition: 0.90s;
+        z-index: 100;
+    }
+
+    nav>a{
+        margin-left: 2rem;
+        text-decoration: none;
+        color: white;
+        font-size: large;
+        font-weight: 500;
+        display: none;
+    }
+
+    nav>ul{ 
+        display: flex;
+        justify-content: center;
+        margin-left: 3rem;
+    }
+}
+
+/* end navbar */
+
+
+
+/* section pertama */
+
+.sectionpertama {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    position: relative; /* Tambahkan relative positioning */
+    overflow: hidden; /* Tambahkan untuk mencegah overflow */
+}
+
+#particles-js {
+    position: absolute; /* Gunakan absolute positioning */
+    top: 0; /* Posisikan di bagian atas */
+    left: 0; /* Posisikan di bagian kiri */
+    width: 100%; /* Ambil lebar penuh */
+    height: 100%; /* Ambil tinggi penuh */
+    z-index: 1; /* Pastikan berada di belakang konten */
+}
+
+.herosection1 {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    position: relative; /* Tambahkan relative positioning */
+    z-index: 2; /* Pastikan berada di atas particles */
+}
+
+.herosectionteks {
+    margin-top: 9rem;
+    max-width: 60%;
+}
+
+.herosection1 > .herosectionimg > img {
+    width: 350px;
+    border-radius: 80px;
+    margin-top: 5rem;
+}
+.herosectionteks>p{
+    max-width: 75%;
+    font-weight: 500;
+    color: white;
+}
+
+.herosectionteks>h2 {
+    position: relative;
+    color: black;
+    -webkit-text-stroke: 1px grey;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    font-weight: 800;
+}
+
+.herosectionteks>h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    -webkit-text-stroke: 1px green;
+    border-right: 2px solid greenyellow;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(20, end) infinite, blink 0.75s step-end infinite;
+    font-weight: 800;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    70% {
+        width: 50%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.logo-sosmed{
+    display: flex;
+    gap: 10px;
+}
+
+.logo-sosmed>a>i{
+    font-size: 20px;
+}
+
+.logo-sosmed>a>i:hover{
+    color: blue;
+}
+
+@media (min-width:300px) and (max-width:346px) {
+    .sectionpertama {
+        background-color: black;
+        height: 143vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .herosection1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 3rem;
+        position: relative; /* Tambahkan relative positioning */
+        z-index: 2; /* Pastikan berada di atas particles */
+    }
+    
+    .herosectionteks {
+        margin-top: 3rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .herosection1 > .herosectionimg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .herosection1 > .herosectionimg > img{
+        width: 260px;
+        border-radius: 80px;
+        margin-top: 7rem;
+    }
+
+    .herosectionteks>p{
+        max-width: 75%;
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:347px) and (max-width:400px) {
+    .sectionpertama {
+        background-color: black;
+        height: 143vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .herosection1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 3rem;
+        position: relative; /* Tambahkan relative positioning */
+        z-index: 2; /* Pastikan berada di atas particles */
+    }
+    
+    .herosectionteks {
+        margin-top: 3rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .herosection1 > .herosectionimg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .herosection1 > .herosectionimg > img{
+        width: 260px;
+        border-radius: 80px;
+        margin-top: 7rem;
+    }
+
+    .herosectionteks>p{
+        max-width: 75%;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:401px) and (max-width:500px) {
+    .sectionpertama {
+        background-color: black;
+        height: 143vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .herosection1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 3rem;
+        position: relative; /* Tambahkan relative positioning */
+        z-index: 2; /* Pastikan berada di atas particles */
+    }
+    
+    .herosectionteks {
+        margin-top: 3rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .herosection1 > .herosectionimg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .herosection1 > .herosectionimg > img{
+        width: 320px;
+        border-radius: 80px;
+        margin-top: 7rem;
+    }
+
+    .herosectionteks>p{
+        max-width: 90%;
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 23px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:501px) and (max-width:650px) {
+    .sectionpertama {
+        background-color: black;
+        height: 163vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .herosection1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 3rem;
+        position: relative; /* Tambahkan relative positioning */
+        z-index: 2; /* Pastikan berada di atas particles */
+    }
+    
+    .herosectionteks {
+        margin-top: 3rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .herosection1 > .herosectionimg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .herosection1 > .herosectionimg > img{
+        width: 420px;
+        border-radius: 80px;
+        margin-top: 7rem;
+    }
+
+    .herosectionteks>p{
+        max-width: 90%;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 29px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:651px) and (max-width:715px) {
+    .sectionpertama {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .herosection1 {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        position: relative; /* Tambahkan relative positioning */
+        z-index: 2; /* Pastikan berada di atas particles */
+        margin-top: 2rem;
+    }
+    
+    .herosectionteks {
+        margin-top: 9rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .herosection1 > .herosectionimg > img {
+        width: 240px;
+        border-radius: 80px;
+        margin-top: 5rem;
+        margin-right: 10px;
+    }
+    .herosectionteks>p{
+        max-width: 95%;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:715.33px) and (max-width:800px) {
+    .sectionpertama {
+        background-color: black;
+        height: 100vh;
+        width:   100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .herosection1 {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        position: relative; /* Tambahkan relative positioning */
+        z-index: 2; /* Pastikan berada di atas particles */
+        margin-top: 2rem;
+    }
+    
+    .herosectionteks {
+        margin-top: 9rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .herosection1 > .herosectionimg > img {
+        width: 260px;
+        border-radius: 80px;
+        margin-top: 5rem;
+        margin-right: 10px;
+    }
+    .herosectionteks>p{
+        max-width: 100%;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 23px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }
+}
+
+@media (min-width:801px) and (max-width:900px) {
+    .sectionpertama {
+        background-color: black;
+        height: 100vh;
+        width:   100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .herosection1 {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        position: relative; /* Tambahkan relative positioning */
+        z-index: 2; /* Pastikan berada di atas particles */
+        margin-top: 2rem;
+    }
+    
+    .herosectionteks {
+        margin-top: 9rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .herosection1 > .herosectionimg > img {
+        width: 280px;
+        border-radius: 80px;
+        margin-top: 5rem;
+        margin-right: 10px;
+    }
+    .herosectionteks>p{
+        max-width: 100%;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }   
+}
+
+@media (min-width:901px) and (max-width:971px) {
+    .sectionpertama {
+        background-color: black;
+        height: 100vh;
+        width:   100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .herosection1 {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        position: relative; /* Tambahkan relative positioning */
+        z-index: 2; /* Pastikan berada di atas particles */
+        margin-top: 2rem;
+    }
+    
+    .herosectionteks {
+        margin-top: 9rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+    
+    .herosection1 > .herosectionimg > img {
+        width: 300px;
+        border-radius: 80px;
+        margin-top: 5rem;
+        margin-right: 10px;
+    }
+    .herosectionteks>p{
+        max-width: 100%;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 29px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }   
+}
+
+@media (min-width:972px) and (max-width:1029.33px) {
+    .herosectionteks {
+        margin-top: 9rem;
+        max-width: 100%;
+        margin-left: 10px;
+    }
+
+    .herosection1 > .herosectionimg > img {
+        margin-right: 10px;
+        margin-top: 5rem;
+    }
+
+    .herosectionteks>p{
+        max-width: 100%;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .herosectionteks>h2 {
+        position: relative;
+        color: black;
+        -webkit-text-stroke: 1px grey;
+        text-transform: uppercase;
+        font-size: 33px;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        font-weight: 800;
+    }  
+}
+/* end section pertama */
+
+
+
+/* start section kedua */
+
+.sectionkedua{
+    background-color: black;
+    height:100vh;
+    width: 100%;
+}
+
+.fullScreen {
+    position: relative; /* Pastikan posisi relatif */
+    width: 100%;
+    height: 100vh; /* Mengisi seluruh tinggi viewport */
+    overflow: hidden; /* Mencegah konten melampaui batas */
+}
+
+canvas {
+    position: absolute; /* Posisi absolut untuk menempatkan canvas */
+    top: 0;
+    left: 0;
+    width: 100%; /* Mengisi lebar container */
+    height: 100%; /* Mengisi tinggi container */
+}
+
+.bagiansectionkedua1 {
+    position: relative; /* Pastikan ini juga relatif */
+    z-index: 1; /* Pastikan konten ini berada di atas canvas */
+    padding: 20px; /* Beri jarak */
+    border-radius: 10px; /* Untuk estetika */
+}
+
+.cardeducation{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.cardeducation1{
+    position: relative;
+    width: 30%;
+    height: 15rem;
+    padding: 2rem;
+    border: 10px solid black;
+    border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+}
+
+.bagiansectionkedua1>h1{
+    color: white;
+    text-align: center;
+}
+
+.cardeducation1>.gambar-smp157{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation1>.gambar-smp157>img{
+    position: absolute;
+    width: 70px;
+    top: 15px;
+}
+
+.cardeducation1>.judul-smp157{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation1>.judul-smp157>h5{
+    position: absolute;
+    top: 105px;
+    color: white;
+}
+
+.cardeducation1>.paragraf-smp157{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation1>.paragraf-smp157>p{
+    position: absolute;
+    top: 135px;
+    color: white;
+    text-align: center;
+}
+
+
+.cardeducation2{
+    position: relative;
+    width: 30%;
+    height: 15rem;
+    padding: 2rem;
+    border: 10px solid black;
+    border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+}
+
+.cardeducation2>.gambar-smahasmi{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation2>.gambar-smahasmi{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation2>.gambar-smahasmi>img{
+    position: absolute;
+    width: 110px;
+    top: 0;
+}
+
+.cardeducation2>.judul-smahasmi{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation2>.judul-smahasmi>h5{
+    position: absolute;
+    top: 105px;
+    color: white;
+    text-align: center;
+}
+
+.cardeducation2>.paragraf-smahasmi{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation2>.paragraf-smahasmi>p{
+    position: absolute;
+    top: 135px;
+    color: white;
+    text-align: center;
+}
+
+
+.cardeducation3{
+    position: relative;
+    width: 30%;
+    height: 15rem;
+    padding: 2rem;
+    border: 10px solid black;
+    border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+}
+
+.cardeducation3>.gambar-idn{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation3>.gambar-idn>img{
+    position: absolute;
+    width: 110px;
+    top: 15px;
+}
+
+.cardeducation3>.judul-idn{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation3>.judul-idn>h5{
+    position: absolute;
+    top: 110px;
+    color: white;
+    text-align: center;
+}
+
+.cardeducation3>.paragraf-idn{
+    display: flex;
+    justify-content: center;
+}
+
+.cardeducation3>.paragraf-idn>p{
+    position: absolute;
+    top: 138px;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .sectionkedua{
+        background-color: black;
+        height:155vh;
+        width: 100%;
+    }
+    
+    .fullScreen {
+        position: relative; /* Pastikan posisi relatif */
+        width: 100%;
+        height: 155vh; /* Mengisi seluruh tinggi viewport */
+        overflow: hidden; /* Mencegah konten melampaui batas */
+    }
+    
+    canvas {
+        position: absolute; /* Posisi absolut untuk menempatkan canvas */
+        top: 0;
+        left: 0;
+        width: 100%; /* Mengisi lebar container */
+        height: 100%; /* Mengisi tinggi container */
+    }
+    
+    .bagiansectionkedua1 {
+        position: relative; /* Pastikan ini juga relatif */
+        z-index: 1; /* Pastikan konten ini berada di atas canvas */
+        padding: 20px; /* Beri jarak */
+        border-radius: 10px; /* Untuk estetika */
+    }
+    
+    .cardeducation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 3rem;
+    }
+    
+    .cardeducation1{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+    }
+    
+    .bagiansectionkedua1>h1{
+        color: white;
+        text-align: center;
+    }
+
+    .cardeducation1>.gambar-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.gambar-smp157>img{
+        position: absolute;
+        width: 55px;
+        top: 15px;
+    }
+
+    .cardeducation1>.judul-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.judul-smp157>h5{
+        position: absolute;
+        top: 105px;
+        color: white;
+    }
+
+    .cardeducation1>.paragraf-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.paragraf-smp157>p{
+        position: absolute;
+        top: 135px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .cardeducation2{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation2>.gambar-smahasmi{
+        display: flex;
+        justify-content: center;        
+    }
+    
+    .cardeducation2>.gambar-smahasmi>img{
+        position: absolute;
+        width: 80px;
+        top: 0;
+    }
+
+    .cardeducation2>.judul-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.judul-smahasmi>h5{
+        position: absolute;
+        top: 105px;
+        color: white;
+        text-align: center;
+    }
+
+    .cardeducation2>.paragraf-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.paragraf-smahasmi>p{
+        position: absolute;
+        top: 135px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    
+    .cardeducation3{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation3>.gambar-idn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardeducation3>.gambar-idn>img{
+        position: absolute;
+        width: 80px;
+        top: 15px;
+    }
+
+    .cardeducation3>.judul-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.judul-idn>h5{
+        position: absolute;
+        top: 105px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .cardeducation3>.paragraf-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.paragraf-idn>p{
+        position: absolute;
+        top: 138px;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (min-width:401px) and (max-width:500px) {
+    .sectionkedua{
+        background-color: black;
+        height:155vh;
+        width: 100%;
+    }
+    
+    .fullScreen {
+        position: relative; /* Pastikan posisi relatif */
+        width: 100%;
+        height: 155vh; /* Mengisi seluruh tinggi viewport */
+        overflow: hidden; /* Mencegah konten melampaui batas */
+    }
+    
+    canvas {
+        position: absolute; /* Posisi absolut untuk menempatkan canvas */
+        top: 0;
+        left: 0;
+        width: 100%; /* Mengisi lebar container */
+        height: 100%; /* Mengisi tinggi container */
+    }
+    
+    .bagiansectionkedua1 {
+        position: relative; /* Pastikan ini juga relatif */
+        z-index: 1; /* Pastikan konten ini berada di atas canvas */
+        padding: 20px; /* Beri jarak */
+        border-radius: 10px; /* Untuk estetika */
+    }
+    
+    .cardeducation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 3rem;
+    }
+    
+    .cardeducation1{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+    }
+    
+    .bagiansectionkedua1>h1{
+        color: white;
+        text-align: center;
+    }
+
+    .cardeducation1>.gambar-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.gambar-smp157>img{
+        position: absolute;
+        width: 55px;
+        top: 15px;
+    }
+
+    .cardeducation1>.judul-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.judul-smp157>h5{
+        position: absolute;
+        top: 105px;
+        color: white;
+    }
+
+    .cardeducation1>.paragraf-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.paragraf-smp157>p{
+        position: absolute;
+        top: 135px;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .cardeducation2{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation2>.gambar-smahasmi{
+        display: flex;
+        justify-content: center;        
+    }
+    
+    .cardeducation2>.gambar-smahasmi>img{
+        position: absolute;
+        width: 80px;
+        top: 0;
+    }
+
+    .cardeducation2>.judul-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.judul-smahasmi>h5{
+        position: absolute;
+        top: 105px;
+        color: white;
+        text-align: center;
+    }
+
+    .cardeducation2>.paragraf-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.paragraf-smahasmi>p{
+        position: absolute;
+        top: 135px;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    
+    .cardeducation3{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation3>.gambar-idn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardeducation3>.gambar-idn>img{
+        position: absolute;
+        width: 80px;
+        top: 15px;
+    }
+
+    .cardeducation3>.judul-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.judul-idn>h5{
+        position: absolute;
+        top: 105px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .cardeducation3>.paragraf-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.paragraf-idn>p{
+        position: absolute;
+        top: 138px;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media (min-width:501px) and (max-width:650px) {
+    .sectionkedua{
+        background-color: black;
+        height:155vh;
+        width: 100%;
+    }
+    
+    .fullScreen {
+        position: relative; /* Pastikan posisi relatif */
+        width: 100%;
+        height: 155vh; /* Mengisi seluruh tinggi viewport */
+        overflow: hidden; /* Mencegah konten melampaui batas */
+    }
+    
+    canvas {
+        position: absolute; /* Posisi absolut untuk menempatkan canvas */
+        top: 0;
+        left: 0;
+        width: 100%; /* Mengisi lebar container */
+        height: 100%; /* Mengisi tinggi container */
+    }
+    
+    .bagiansectionkedua1 {
+        position: relative; /* Pastikan ini juga relatif */
+        z-index: 1; /* Pastikan konten ini berada di atas canvas */
+        padding: 20px; /* Beri jarak */
+        border-radius: 10px; /* Untuk estetika */
+    }
+    
+    .cardeducation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 3rem;
+    }
+    
+    .cardeducation1{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+    }
+    
+    .bagiansectionkedua1>h1{
+        color: white;
+        text-align: center;
+    }
+
+    .cardeducation1>.gambar-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.gambar-smp157>img{
+        position: absolute;
+        width: 55px;
+        top: 15px;
+    }
+
+    .cardeducation1>.judul-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.judul-smp157>h5{
+        position: absolute;
+        top: 105px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .cardeducation1>.paragraf-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.paragraf-smp157>p{
+        position: absolute;
+        top: 135px;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .cardeducation2{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation2>.gambar-smahasmi{
+        display: flex;
+        justify-content: center;        
+    }
+    
+    .cardeducation2>.gambar-smahasmi>img{
+        position: absolute;
+        width: 80px;
+        top: 0;
+    }
+
+    .cardeducation2>.judul-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.judul-smahasmi>h5{
+        position: absolute;
+        top: 105px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cardeducation2>.paragraf-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.paragraf-smahasmi>p{
+        position: absolute;
+        top: 135px;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    
+    .cardeducation3{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation3>.gambar-idn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardeducation3>.gambar-idn>img{
+        position: absolute;
+        width: 80px;
+        top: 15px;
+    }
+
+    .cardeducation3>.judul-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.judul-idn>h5{
+        position: absolute;
+        top: 105px;
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .cardeducation3>.paragraf-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.paragraf-idn>p{
+        position: absolute;
+        top: 138px;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width:651px) and (max-width:715px) {
+    .sectionkedua{
+        background-color: black;
+        height:155vh;
+        width: 100%;
+    }
+    
+    .fullScreen {
+        position: relative; /* Pastikan posisi relatif */
+        width: 100%;
+        height: 155vh; /* Mengisi seluruh tinggi viewport */
+        overflow: hidden; /* Mencegah konten melampaui batas */
+    }
+    
+    canvas {
+        position: absolute; /* Posisi absolut untuk menempatkan canvas */
+        top: 0;
+        left: 0;
+        width: 100%; /* Mengisi lebar container */
+        height: 100%; /* Mengisi tinggi container */
+    }
+    
+    .bagiansectionkedua1 {
+        position: relative; /* Pastikan ini juga relatif */
+        z-index: 1; /* Pastikan konten ini berada di atas canvas */
+        padding: 20px; /* Beri jarak */
+        border-radius: 10px; /* Untuk estetika */
+    }
+    
+    .cardeducation{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3rem;
+    }
+    
+    .cardeducation1{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+    
+    .bagiansectionkedua1>h1{
+        color: white;
+        text-align: center;
+    }
+
+    .cardeducation1>.gambar-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.gambar-smp157>img{
+        position: absolute;
+        width: 48px;
+        top: 15px;
+    }
+
+    .cardeducation1>.judul-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.judul-smp157>h5{
+        position: absolute;
+        top: 105px;
+        font-size: 17px;
+        color: white;
+    }
+
+    .cardeducation1>.paragraf-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.paragraf-smp157>p{
+        position: absolute;
+        top: 135px;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .cardeducation2{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top:20rem;
+    }
+
+    .cardeducation2>.gambar-smahasmi{
+        display: flex;
+        justify-content: center;        
+    }
+    
+    .cardeducation2>.gambar-smahasmi>img{
+        position: absolute;
+        width: 80px;
+        top: 0;
+    }
+
+    .cardeducation2>.judul-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.judul-smahasmi>h5{
+        position: absolute;
+        top: 90px;
+        color: white;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .cardeducation2>.paragraf-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.paragraf-smahasmi>p{
+        position: absolute;
+        top: 120px;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    
+    .cardeducation3{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation3>.gambar-idn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardeducation3>.gambar-idn>img{
+        position: absolute;
+        width: 80px;
+        top: 10px;
+    }
+
+    .cardeducation3>.judul-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.judul-idn>h5{
+        position: absolute;
+        top: 90px;
+        font-size: 17px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .cardeducation3>.paragraf-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.paragraf-idn>p{
+        position: absolute;
+        top: 120px;
+        color: white;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media (min-width:715.33px) and (max-width:800px) {
+    .sectionkedua{
+        background-color: black;
+        height:100vh;
+        width: 100%;
+    }
+    
+    .fullScreen {
+        position: relative; /* Pastikan posisi relatif */
+        width: 100%;
+        height: 155vh; /* Mengisi seluruh tinggi viewport */
+        overflow: hidden; /* Mencegah konten melampaui batas */
+    }
+    
+    canvas {
+        position: absolute; /* Posisi absolut untuk menempatkan canvas */
+        top: 0;
+        left: 0;
+        width: 100%; /* Mengisi lebar container */
+        height: 100%; /* Mengisi tinggi container */
+    }
+    
+    .bagiansectionkedua1 {
+        position: relative; /* Pastikan ini juga relatif */
+        z-index: 1; /* Pastikan konten ini berada di atas canvas */
+        padding: 20px; /* Beri jarak */
+        border-radius: 10px; /* Untuk estetika */
+    }
+    
+    .cardeducation{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3rem;
+        gap: 1rem;
+    }
+    
+    .cardeducation1{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+    
+    .bagiansectionkedua1>h1{
+        color: white;
+        text-align: center;
+    }
+
+    .cardeducation1>.gambar-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.gambar-smp157>img{
+        position: absolute;
+        width: 48px;
+        top: 15px;
+    }
+
+    .cardeducation1>.judul-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.judul-smp157>h5{
+        position: absolute;
+        top: 90px;
+        font-size: 18px;
+        color: white;
+    }
+
+    .cardeducation1>.paragraf-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.paragraf-smp157>p{
+        position: absolute;
+        top: 120px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .cardeducation2{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top:1.5rem;
+    }
+
+    .cardeducation2>.gambar-smahasmi{
+        display: flex;
+        justify-content: center;        
+    }
+    
+    .cardeducation2>.gambar-smahasmi>img{
+        position: absolute;
+        width: 80px;
+        top: 0;
+    }
+
+    .cardeducation2>.judul-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.judul-smahasmi>h5{
+        position: absolute;
+        top: 90px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .cardeducation2>.paragraf-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.paragraf-smahasmi>p{
+        position: absolute;
+        top: 120px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    
+    .cardeducation3{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation3>.gambar-idn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardeducation3>.gambar-idn>img{
+        position: absolute;
+        width: 80px;
+        top: 10px;
+    }
+
+    .cardeducation3>.judul-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.judul-idn>h5{
+        position: absolute;
+        top: 90px;
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .cardeducation3>.paragraf-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.paragraf-idn>p{
+        position: absolute;
+        top: 120px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (min-width:801px) and (max-width:1029.33px) {
+    .sectionkedua{
+        background-color: black;
+        height:100vh;
+        width: 100%;
+    }
+    
+    .fullScreen {
+        position: relative; /* Pastikan posisi relatif */
+        width: 100%;
+        height: 155vh; /* Mengisi seluruh tinggi viewport */
+        overflow: hidden; /* Mencegah konten melampaui batas */
+    }
+    
+    canvas {
+        position: absolute; /* Posisi absolut untuk menempatkan canvas */
+        top: 0;
+        left: 0;
+        width: 100%; /* Mengisi lebar container */
+        height: 100%; /* Mengisi tinggi container */
+    }
+    
+    .bagiansectionkedua1 {
+        position: relative; /* Pastikan ini juga relatif */
+        z-index: 1; /* Pastikan konten ini berada di atas canvas */
+        padding: 20px; /* Beri jarak */
+        border-radius: 10px; /* Untuk estetika */
+    }
+    
+    .cardeducation{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3rem;
+        gap: 1rem;
+    }
+    
+    .cardeducation1{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+    
+    .bagiansectionkedua1>h1{
+        color: white;
+        text-align: center;
+    }
+
+    .cardeducation1>.gambar-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.gambar-smp157>img{
+        position: absolute;
+        width: 48px;
+        top: 15px;
+    }
+
+    .cardeducation1>.judul-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.judul-smp157>h5{
+        position: absolute;
+        top: 90px;
+        font-size: 19px;
+        color: white;
+    }
+
+    .cardeducation1>.paragraf-smp157{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation1>.paragraf-smp157>p{
+        position: absolute;
+        top: 120px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .cardeducation2{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top:1.5rem;
+    }
+
+    .cardeducation2>.gambar-smahasmi{
+        display: flex;
+        justify-content: center;        
+    }
+    
+    .cardeducation2>.gambar-smahasmi>img{
+        position: absolute;
+        width: 80px;
+        top: 0;
+    }
+
+    .cardeducation2>.judul-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.judul-smahasmi>h5{
+        position: absolute;
+        top: 90px;
+        color: white;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .cardeducation2>.paragraf-smahasmi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation2>.paragraf-smahasmi>p{
+        position: absolute;
+        top: 120px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    
+    .cardeducation3{
+        position: relative;
+        width: 100%;
+        height: 15rem;
+        padding: 2rem;
+        border: 10px solid black;
+        border-image: linear-gradient(to right, #1D2A78, #2C3E99, #6F1D99) 1;
+        margin-top: 1.5rem;
+    }
+
+    .cardeducation3>.gambar-idn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardeducation3>.gambar-idn>img{
+        position: absolute;
+        width: 80px;
+        top: 10px;
+    }
+
+    .cardeducation3>.judul-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.judul-idn>h5{
+        position: absolute;
+        top: 90px;
+        font-size: 19px;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .cardeducation3>.paragraf-idn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cardeducation3>.paragraf-idn>p{
+        position: absolute;
+        top: 120px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* end section kedua */
+
+
+
+
+
+/* start section ketiga */
+
+.sectionketiga{
+    background-color: black;
+    height:138vh;
+    width: 100%;
+    position: relative; /* Tambahkan relative positioning */
+    overflow: hidden; /* Tambahkan untuk mencegah overflow */
+}
+
+#particles-js2{
+    position: absolute; /* Gunakan absolute positioning */
+    top: 0; /* Posisikan di bagian atas */
+    left: 0; /* Posisikan di bagian kiri */
+    width: 100%; /* Ambil lebar penuh */
+    height: 100%; /* Ambil tinggi penuh */
+    z-index: 1; /* Pastikan berada di belakang konten */
+}
+
+
+.bagiansectionketiga3>h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+}
+
+.sertifikatutama{
+    pointer-events: none;
+}
+
+.sertifikat1{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 2rem;
+}
+
+.sertifikat2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.imagesertif1{
+    box-shadow: 10px 10px 15px 1px white;
+}
+
+.imagesertif2{
+    box-shadow: 10px 10px 15px 1px white;
+}
+
+.imagesertif3{
+    box-shadow: 10px 10px 15px 1px white;
+}
+
+.imagesertif4{
+    box-shadow: 10px 10px 15px 1px white;
+}
+
+.imagesertif1{
+    width: 350px;
+    height: 300px;
+}
+
+.imagesertif2{
+    width: 350px;
+    height: 300px;
+}
+
+.imagesertif3{
+    width: 350px;
+    height: 300px;
+}
+
+.imagesertif4{
+    width: 350px;
+    height: 300px;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .sectionketiga{
+        background-color: black;
+        height:90vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .imagesertif1{
+        width: 130px;
+        height: 130px;
+    }
+
+    .imagesertif2{
+        width: 130px;
+        height: 130px;
+    }
+
+    .imagesertif3{
+        width: 130px;
+        height: 130px;
+    }
+
+    .imagesertif4{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (min-width:401px) and (max-width:500px) {
+    .sectionketiga{
+        background-color: black;
+        height:115vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .imagesertif1{
+        width: 170px;
+        height: 160px;
+    }
+
+    .imagesertif2{
+        width: 170px;
+        height: 160px;
+    }
+
+    .imagesertif3{
+        width: 170px;
+        height: 160px;
+    }
+
+    .imagesertif4{
+        width: 170px;
+        height: 160px;
+    }
+}
+
+@media (min-width:501px) and (max-width:699px) {
+    .sectionketiga{
+        background-color: black;
+        height:128vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .imagesertif1{
+        width: 220px;
+        height: 180px;
+    }
+
+    .imagesertif2{
+        width: 220px;
+        height: 180px;
+    }
+
+    .imagesertif3{
+        width: 220px;
+        height: 180px;
+    }
+
+    .imagesertif4{
+        width: 220px;
+        height: 180px;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    .sectionketiga{
+        background-color: black;
+        height:138vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .imagesertif1{
+        width: 270px;
+        height: 220px;
+    }
+
+    .imagesertif2{
+        width: 270px;
+        height: 220px;
+    }
+
+    .imagesertif3{
+        width: 270px;
+        height: 220px;
+    }
+
+    .imagesertif4{
+        width: 270px;
+        height: 220px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1030.00px) {
+    .sectionketiga{
+        background-color: black;
+        height:138vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+
+    .imagesertif1{
+        width: 300px;
+        height: 250px;
+    }
+
+    .imagesertif2{
+        width: 300px;
+        height: 250px;
+    }
+
+    .imagesertif3{
+        width: 300px;
+        height: 250px;
+    }
+
+    .imagesertif4{
+        width: 300px;
+        height: 250px;
+    }
+}
+
+/* end section ketiga */
+
+
+
+/* start section keempat */
+
+.sectionkeempat{
+        background-color: black;
+        height:110vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+}
+
+#particles-js3{
+    position: absolute; /* Gunakan absolute positioning */
+    top: 0; /* Posisikan di bagian atas */
+    left: 0; /* Posisikan di bagian kiri */
+    width: 100%; /* Ambil lebar penuh */
+    height: 100%; /* Ambil tinggi penuh */
+    pointer-events: none;
+    z-index: 1; /* Pastikan berada di belakang konten */
+}
+
+.bagiansectionkeempat4>h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+}
+
+.bagianskiilutama11{
+    overflow: hidden;
+}
+
+.html{
+    width: 120px;
+    height: 120px;
+    margin-right: 7rem;
+}
+
+.css{
+    width: 130px;
+    height: 120px;
+    margin-left: -1rem;
+    margin-right: 7rem;
+}
+
+.javascript{
+    width: 180px;
+    height: 120px;
+    margin-left: -3rem;
+    margin-right: 7rem;
+}
+
+.reactjs{
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-left: -3rem;
+    margin-right: 7rem;
+}
+
+.vuejs{
+    width: 100px;
+    height: 100px;
+    margin-top: 1.2rem;
+    margin-right: 7rem;
+}
+
+.typescript{
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-right: 7rem;
+}
+
+.bootstrap{
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-right: 7rem;
+}
+
+.tailwind{
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-right: 7rem;
+}
+
+.bagianskiilutama22{
+    overflow: hidden;
+    padding: 1rem;
+    background-color:  rgba(255, 255, 255, 0.767);
+    border-radius: 10px;
+    z-index: 100;
+    margin-top: 4rem;
+}
+
+.bagianskiilutama2{
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 100;
+    animation: infinite-scroll 10s linear infinite;
+}
+
+.bagianskiilutama2:hover{
+    animation-play-state: paused;
+}
+
+.wordpress{
+    width: 100px;
+    height: 100px;
+    margin-right: 7rem;
+}
+
+.python{
+    width: 120px;
+    height: 120px;
+    margin-right: 7rem;
+}   
+
+.nodejs{
+    width: 100px;
+    height: 100px;
+    margin-right: 7rem;
+}
+
+.golang{
+    width: 110px;
+    height: 110px;
+    margin-right: 7rem;
+}
+
+.expressjs{
+    width: 100px;
+    height: 100px;
+    margin-right: 7rem;
+}
+
+.django{
+    width: 120px;
+    height: 120px;
+    margin-right: 7rem;
+}
+
+.echo{
+    width: 190px;
+    height: 190px;
+    margin-right: 7rem;
+}
+
+.mysql{
+    width: 110px;
+    height: 110px;
+    margin-right: 7rem;
+}
+
+.bagianskiilutama11{
+    overflow: hidden;
+    padding: 3rem;
+    background-color:  rgba(255, 255, 255, 0.767);
+    border-radius: 10px;
+    margin-top: 2rem;
+    z-index: 100;
+}
+
+.bagianskiilutama1{
+    display: inline-block;
+    white-space: nowrap;
+    z-index: 100;
+    animation: infinite-scroll 10s linear infinite;
+}
+
+.bagianskiilutama1:hover{
+    animation-play-state: paused;
+}
+
+@keyframes infinite-scroll {
+    from{
+        transform: translateX(o);
+    } to {
+        transform: translateX(-50%);
+    }
+}
+/* end section keempat */
+
+
+
+
+
+/* start section kelima */
+
+.sectionkelima{
+    background-color: black;
+    height:180vh;
+    width: 100%;
+    position: relative; /* Tambahkan relative positioning */
+    overflow: hidden; /* Tambahkan untuk mencegah overflow */
+}
+
+#particles-js4{
+position: absolute; /* Gunakan absolute positioning */
+top: 0; /* Posisikan di bagian atas */
+left: 0; /* Posisikan di bagian kiri */
+width: 100%; /* Ambil lebar penuh */
+height: 100%; /* Ambil tinggi penuh */
+z-index: 1; /* Pastikan berada di belakang konten */
+}
+
+
+.bagiansectionkelima5>h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+}
+
+.bagiansectionkelima6{
+    display: flex;
+    justify-content: center;
+}
+
+.kotak1{
+    background-color: grey;
+    border: 2px solid black;
+    width: 550px;
+    height: 250px;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.kotak1>ul{
+    margin-left: 9rem;
+}
+
+.kotak1>ul>li{
+    font-size: 14px;
+    color: white;
+    max-width: 70%;
+}
+
+.kotak11{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pengalaman1{
+    margin-top: 1rem;
+    color: white;
+    font-size: 18px;
+}
+
+.month1{
+    margin-top: 1.4rem;
+    color: white;
+    font-size: 12px;
+}
+
+.gambarexperience1{
+    width: 90px;
+    margin-top: -1rem;
+}
+
+
+.kotak2{
+    background-color: grey;
+    position: absolute;
+    border: 2px solid black;
+    width: 550px;
+    height: 250px;
+    margin-top: 22rem;
+}
+
+.kotak22{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.3rem;
+}
+
+.experience2{
+    color: white;
+}
+
+.pengalaman2{
+    color: white;
+}
+
+.month2{
+    color: white;
+}
+
+.kotak2>ul{
+    margin-left: 9rem;
+    margin-top: 1rem;
+}
+
+.kotak2>ul>li{
+    font-size: 14px;
+    color: white;
+    max-width: 70%;
+}
+
+
+
+.kotak3{
+    background-color: grey;
+    position: absolute;
+    border: 2px solid black;
+    width: 550px;
+    height: 250px;
+    margin-top: 40rem;
+}
+
+.kotak33{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.3rem;
+}
+
+.experience3{
+    color: white;
+}
+
+.pengalaman3{
+    color: white;
+}
+
+.month3{
+    color: white;
+}
+
+.kotak3>ul{
+    margin-left: 9rem;
+    margin-top: 1rem;
+}
+
+.kotak3>ul>li{
+    font-size: 14px;
+    color: white;
+    max-width: 70%;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .kotak1{
+        background-color: grey;
+        border: 2px solid black;
+        width: 300px;
+        height: 250px;
+        margin-top: 4rem;
+        position: relative;
+    }
+    
+    .kotak1>ul{
+        margin-left: 1rem;
+    }
+    
+    .kotak1>ul>li{
+        font-size: 13px;
+        color: white;
+        max-width: 100%;
+    }
+    
+    .kotak11{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .pengalaman1{
+        margin-top: 1rem;
+        color: white;
+        font-size: 16px;
+        width: 70%;
+        text-align: center;
+    }
+    
+    .month1{
+        margin-top: 1.4rem;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .gambarexperience1{
+        width: 60px;
+        margin-top: -1rem;
+    }
+
+    .kotak2{
+        background-color: grey;
+        position: absolute;
+        border: 2px solid black;
+        width: 300px;
+        height: 250px;
+        margin-top: 22rem;
+    }
+    
+    .kotak22{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.3rem;
+    }
+    
+    .experience2{
+        color: white;
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    
+    .pengalaman2{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .month2{
+        color: white;
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    
+    .kotak2>ul{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .kotak2>ul>li{
+        font-size: 13px;
+        color: white;
+        max-width: 100%;
+    }
+    
+    .kotak3{
+        background-color: grey;
+        position: absolute;
+        border: 2px solid black;
+        width: 300px;
+        height: 250px;
+        margin-top: 40rem;
+    }
+    
+    .kotak33{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.3rem;
+    }
+    
+    .experience3{
+        color: white;
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    
+    .pengalaman3{
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .month3{
+        color: white;
+        font-size: 12px;
+        margin-top: 4px;
+        width: 60%;
+    }
+    
+    .kotak3>ul{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .kotak3>ul>li{
+        font-size: 13px;
+        color: white;
+        max-width: 100%;
+    }
+}
+
+@media (min-width:401px) and (max-width:500px) {
+    .kotak1{
+        background-color: grey;
+        border: 2px solid black;
+        width: 400px;
+        height: 250px;
+        margin-top: 4rem;
+        position: relative;
+    }
+    
+    .kotak1>ul{
+        margin-left: 1rem;
+    }
+    
+    .kotak1>ul>li{
+        font-size: 14px;
+        color: white;
+        max-width: 98%;
+    }
+    
+    .kotak11{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .pengalaman1{
+        margin-top: 1rem;
+        color: white;
+        font-size: 16px;
+        width: 70%;
+        text-align: center;
+    }
+    
+    .month1{
+        margin-top: 1.4rem;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .gambarexperience1{
+        width: 60px;
+        margin-top: -1rem;
+    }
+
+    .kotak2{
+        background-color: grey;
+        position: absolute;
+        border: 2px solid black;
+        width: 400px;
+        height: 250px;
+        margin-top: 22rem;
+    }
+    
+    .kotak22{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.3rem;
+    }
+    
+    .experience2{
+        color: white;
+        font-size: 16px;
+        width: 20%;
+    }
+    
+    .pengalaman2{
+        color: white;
+        font-size: 16px;
+    }
+    
+    .month2{
+        color: white;
+        font-size: 12px;
+        margin-top: 3px;
+        width: 20%;
+    }
+    
+    .kotak2>ul{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .kotak2>ul>li{
+        font-size: 14px;
+        color: white;
+        max-width: 98%;
+    }
+    
+    .kotak3{
+        background-color: grey;
+        position: absolute;
+        border: 2px solid black;
+        width: 400px;
+        height: 250px;
+        margin-top: 40rem;
+    }
+    
+    .kotak33{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.3rem;
+    }
+    
+    .experience3{
+        color: white;
+        font-size: 16px;
+    }
+    
+    .pengalaman3{
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .month3{
+        color: white;
+        font-size: 12px;
+        margin-top: 4px;
+        width: 20%;
+    }
+    
+    .kotak3>ul{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .kotak3>ul>li{
+        font-size: 14px;
+        color: white;
+        max-width: 98%;
+    }
+}
+
+@media (min-width:501px) and (max-width:650px) {
+    .kotak1{
+        background-color: grey;
+        border: 2px solid black;
+        width: 480px;
+        height: 250px;
+        margin-top: 4rem;
+        position: relative;
+    }
+    
+    .kotak1>ul{
+        margin-left: 1rem;
+    }
+    
+    .kotak1>ul>li{
+        font-size: 14px;
+        color: white;
+        max-width: 85%;
+    }
+    
+    .kotak11{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .pengalaman1{
+        margin-top: 1rem;
+        color: white;
+        font-size: 17px;
+        width: 70%;
+        text-align: center;
+    }
+    
+    .month1{
+        margin-top: 1.4rem;
+        color: white;
+        font-size: 13px;
+    }
+    
+    .gambarexperience1{
+        width: 60px;
+        margin-top: -1rem;
+    }
+
+    .kotak2{
+        background-color: grey;
+        position: absolute;
+        border: 2px solid black;
+        width: 480px;
+        height: 250px;
+        margin-top: 22rem;
+    }
+    
+    .kotak22{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.3rem;
+    }
+    
+    .experience2{
+        color: white;
+        font-size: 17px;
+        width: 20%;
+    }
+    
+    .pengalaman2{
+        color: white;
+        font-size: 17px;
+    }
+    
+    .month2{
+        color: white;
+        font-size: 13px;
+        margin-top: 3px;
+        width: 20%;
+    }
+    
+    .kotak2>ul{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .kotak2>ul>li{
+        font-size: 14px;
+        color: white;
+        max-width: 85%;
+    }
+    
+    .kotak3{
+        background-color: grey;
+        position: absolute;
+        border: 2px solid black;
+        width: 480px;
+        height: 250px;
+        margin-top: 40rem;
+    }
+    
+    .kotak33{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.3rem;
+    }
+    
+    .experience3{
+        color: white;
+        font-size: 17px;
+    }
+    
+    .pengalaman3{
+        color: white;
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    .month3{
+        color: white;
+        font-size: 13px;
+        margin-top: 4px;
+        width: 20%;
+    }
+    
+    .kotak3>ul{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .kotak3>ul>li{
+        font-size: 14px;
+        color: white;
+        max-width: 85%;
+    }
+}
+
+/* end section kelima */
+
+
+
+/* start section keenam */
+
+.sectionkeenam{
+    background-color: black;
+    height:180vh;
+    width: 100%;
+    position: relative; /* Tambahkan relative positioning */
+    overflow: hidden; /* Tambahkan untuk mencegah overflow */
+}
+
+#particles-js6{
+position: absolute; /* Gunakan absolute positioning */
+top: 0; /* Posisikan di bagian atas */
+left: 0; /* Posisikan di bagian kiri */
+width: 100%; /* Ambil lebar penuh */
+height: 100%; /* Ambil tinggi penuh */
+z-index: 0; /* Pastikan berada di belakang konten */
+}
+
+.bagiansectionkeenam6{
+    z-index: 1;
+}
+
+.bagiansectionkeenam6>h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+}
+
+.bagiansectionkeenam8{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.bagiansectionkeenam9{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.sizecard{
+    width: 18rem;
+}
+
+.tombol{
+    width: 100px;
+    height: 35px;
+    margin-top: -10px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.button{
+    font-size: 13px;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    top: 4.5px;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+.sectionkeenam{
+    background-color: black;
+    height:140vh;
+    width: 100%;
+    position: relative; /* Tambahkan relative positioning */
+    overflow: hidden; /* Tambahkan untuk mencegah overflow */
+}
+
+.bagiansectionkeenam88{
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.bagiansectionkeenam8{
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+}
+
+.bagiansectionkeenam88::-webkit-scrollbar{
+    display: none;
+}
+
+.bagiansectionkeenam99{
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.bagiansectionkeenam9{
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+}
+
+.bagiansectionkeenam99::-webkit-scrollbar{
+    display: none;
+}
+
+.sizecard{
+    width: 8.1rem;
+}
+
+.card-title{
+    font-size: 15px;
+}
+
+.card-text{
+    font-size: 12px;
+    width: 120%;
+}
+
+.card-body{
+    height: 11rem;
+}
+
+.tombol{
+    width: 100px;
+    height: 30px;
+    margin-top: -10px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.button{
+    font-size: 12px;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    top: 4.5px;
+}
+
+.card-body {
+    padding-bottom: 15px; /* Tambahkan ruang di bawah */
+}
+
+}
+
+@media (min-width:401px) and (max-width:500px) {
+    .sectionkeenam{
+        background-color: black;
+        height:150vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+    
+    .bagiansectionkeenam88{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam8{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam88::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .bagiansectionkeenam99{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam9{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam99::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .sizecard{
+        width: 11rem;
+    }
+    
+    .card-title{
+        font-size: 17px;
+    }
+    
+    .card-text{
+        font-size: 13px;
+        width: 110%;
+    }
+    
+    .card-body{
+        height: 11rem;
+    }
+    
+    .tombol{
+        width: 100px;
+        height: 30px;
+        margin-top: -10px;
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-radius: 5px;
+    }
+    
+    .button{
+        font-size: 13px;
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        top: 4.5px;
+    }
+    
+    .card-body {
+        padding-bottom: 15px; /* Tambahkan ruang di bawah */
+    }
+}
+
+@media (min-width:501px) and (max-width:650px) {
+    .sectionkeenam{
+        background-color: black;
+        height:160vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+    
+    .bagiansectionkeenam88{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam8{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam88::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .bagiansectionkeenam99{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam9{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam99::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .sizecard{
+        width: 14.4rem;
+    }
+    
+    .card-title{
+        font-size: 17px;
+    }
+    
+    .card-text{
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    .card-body{
+        height: 11rem;
+    }
+    
+    .tombol{
+        width: 100px;
+        height: 30px;
+        margin-top: 6px;
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-radius: 5px;
+    }
+    
+    .button{
+        font-size: 13px;
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        top: 4.5px;
+    }
+    
+    .card-body {
+        padding-bottom: 15px; /* Tambahkan ruang di bawah */
+    }
+}
+
+@media (min-width:651px) and (max-width:715px) {
+    .sectionkeenam{
+        background-color: black;
+        height:170vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+    
+    .bagiansectionkeenam88{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam8{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam88::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .bagiansectionkeenam99{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam9{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam99::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .sizecard{
+        width: 15.5rem;
+    }
+    
+    .card-title{
+        font-size: 17px;
+    }
+    
+    .card-text{
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    .card-body{
+        height: 11rem;
+    }
+    
+    .tombol{
+        width: 100px;
+        height: 30px;
+        margin-top: 7px;
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-radius: 5px;
+    }
+    
+    .button{
+        font-size: 13px;
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        top: 4.5px;
+    }
+    
+    .card-body {
+        padding-bottom: 15px; /* Tambahkan ruang di bawah */
+    }
+}
+
+@media(min-width:716px) and (max-width:800px) {
+    .sectionkeenam{
+        background-color: black;
+        height:170vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+    
+    .bagiansectionkeenam88{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam8{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam88::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .bagiansectionkeenam99{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam9{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam99::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .sizecard{
+        width: 15.5rem;
+    }
+    
+    .card-title{
+        font-size: 17px;
+    }
+    
+    .card-text{
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    .card-body{
+        height: 11rem;
+    }
+    
+    .tombol{
+        width: 100px;
+        height: 30px;
+        margin-top: 7px;
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-radius: 5px;
+    }
+    
+    .button{
+        font-size: 13px;
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        top: 4.5px;
+    }
+    
+    .card-body {
+        padding-bottom: 15px; /* Tambahkan ruang di bawah */
+    }
+}
+
+@media(min-width:801px) and (max-width:900px) {
+    .sectionkeenam{
+        background-color: black;
+        height:170vh;
+        width: 100%;
+        position: relative; /* Tambahkan relative positioning */
+        overflow: hidden; /* Tambahkan untuk mencegah overflow */
+    }
+    
+    .bagiansectionkeenam88{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam8{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam88::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .bagiansectionkeenam99{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .bagiansectionkeenam9{
+        display: flex;
+        gap: 1rem;
+        width: max-content;
+    }
+    
+    .bagiansectionkeenam99::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .sizecard{
+        width: 15.5rem;
+    }
+    
+    .card-title{
+        font-size: 17px;
+    }
+    
+    .card-text{
+        font-size: 13px;
+        width: 100%;
+    }
+    
+    .card-body{
+        height: 11rem;
+    }
+    
+    .tombol{
+        width: 100px;
+        height: 30px;
+        margin-top: 7px;
+        background-color: dodgerblue;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-radius: 5px;
+    }
+    
+    .button{
+        font-size: 13px;
+        position: absolute;
+        color: white;
+        text-decoration: none;
+        top: 4.5px;
+    }
+    
+    .card-body {
+        padding-bottom: 15px; /* Tambahkan ruang di bawah */
+    }
+}
+
+/* end section keenam */
+
+
+
+/* start section ketujuh */
+
+.sectionketujuh{
+    background-color: black;
+    height:100vh;
+    width: 100%;
+    position: relative; /* Tambahkan relative positioning */
+    overflow: hidden; /* Tambahkan untuk mencegah overflow */
+}
+
+#particles-js5{
+position: absolute; /* Gunakan absolute positioning */
+top: 0; /* Posisikan di bagian atas */
+left: 0; /* Posisikan di bagian kiri */
+width: 100%; /* Ambil lebar penuh */
+height: 100%; /* Ambil tinggi penuh */
+pointer-events: none;
+z-index: 1; /* Pastikan berada di belakang konten */
+}
+
+
+.bagiansectionketujuh7>h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+}
+
+.bagiansectionketujuh8>.nama{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.namadepan>label{
+    color: white;
+}
+
+.namadepan>input{
+    width: 300px;
+    border-radius: 7px;
+}
+
+.namabelakang>label{
+    color: white;
+}
+
+.namabelakang>input{
+    width: 300px;
+    border-radius: 7px;
+}
+
+
+.bagiansectionketujuh8>.emailphone{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.email>label{
+    color: white;
+}
+
+.email>input{
+    width: 300px;
+    border-radius: 7px;
+}
+
+.phone>label{
+    color: white;
+}
+
+.phone>input{
+    width: 300px;
+    border-radius: 7px;
+}
+
+
+.bagiansectionketujuh8>.message{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.message2>label{
+    display: block;
+    color: white;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .bagiansectionketujuh8>.nama{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .namadepan>label{
+        color: white;
+        font-size: 12px;
+    }
+    
+    .namadepan>input{
+        width: 130px;
+        border-radius: 7px;
+    }
+    
+    .namabelakang>label{
+        font-size: 12px;
+        color: white;
+    }
+    
+    .namabelakang>input{
+        width: 130px;
+        border-radius: 7px;
+    }
+    
+    
+    .bagiansectionketujuh8>.emailphone{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 2rem;
+    }
+    
+    .email>label{
+        color: white;
+        font-size: 12px;
+    }
+    
+    .email>input{
+        width: 130px;
+        border-radius: 7px;
+    }
+    
+    .phone>label{
+        color: white;
+        font-size: 12px;
+    }
+    
+    .phone>input{
+        width: 130px;
+        border-radius: 7px;
+    }
+    
+    
+    .bagiansectionketujuh8>.message{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .message2>label{
+        display: block;
+        color: white;
+    }
+    
+    .message2>.message{
+        width: 270px;
+    }
+}
+
+@media (min-width:401px) and (max-width:500px) {
+    .bagiansectionketujuh8>.nama{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .namadepan>label{
+        color: white;
+        font-size: 13px;
+    }
+    
+    .namadepan>input{
+        width: 180px;
+        border-radius: 7px;
+    }
+    
+    .namabelakang>label{
+        font-size: 13px;
+        color: white;
+    }
+    
+    .namabelakang>input{
+        width: 180px;
+        border-radius: 7px;
+    }
+    
+    
+    .bagiansectionketujuh8>.emailphone{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 2rem;
+    }
+    
+    .email>label{
+        color: white;
+        font-size: 13px;
+    }
+    
+    .email>input{
+        width: 180px;
+        border-radius: 7px;
+    }
+    
+    .phone>label{
+        color: white;
+        font-size: 13px;
+    }
+    
+    .phone>input{
+        width: 180px;
+        border-radius: 7px;
+    }
+    
+    
+    .bagiansectionketujuh8>.message{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .message2>label{
+        display: block;
+        color: white;
+        font-size: 13px;
+    }
+    
+    .message2>.message{
+        width: 365px;
+    }
+}
+
+@media (min-width:501px) and (max-width:650px) {
+    .bagiansectionketujuh8>.nama{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .namadepan>label{
+        color: white;
+        font-size: 13px;
+    }
+    
+    .namadepan>input{
+        width: 230px;
+        border-radius: 7px;
+    }
+    
+    .namabelakang>label{
+        font-size: 13px;
+        color: white;
+    }
+    
+    .namabelakang>input{
+        width: 230px;
+        border-radius: 7px;
+    }
+    
+    
+    .bagiansectionketujuh8>.emailphone{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 2rem;
+    }
+    
+    .email>label{
+        color: white;
+        font-size: 13px;
+    }
+    
+    .email>input{
+        width: 230px;
+        border-radius: 7px;
+    }
+    
+    .phone>label{
+        color: white;
+        font-size: 13px;
+    }
+    
+    .phone>input{
+        width: 230px;
+        border-radius: 7px;
+    }
+    
+    
+    .bagiansectionketujuh8>.message{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .message2>label{
+        display: block;
+        color: white;
+        font-size: 13px;
+    }
+    
+    .message2>.message{
+        width: 460px;
+    }
+}
+
+
+/* end section ketujuh */
